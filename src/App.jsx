@@ -5,6 +5,9 @@ import { Ejercicio02UI } from "./componentes/Ejercicio02UI";
 import { Ejercicio03UI } from "./componentes/Ejercicio03UI";
 import { Ejercicio04UI } from "./componentes/Ejercicio04UI";
 import { Ejercicio05UI } from "./componentes/Ejercicio05UI";
+import { Ejercicio06UI } from "./componentes/Ejercicio06UI";
+
+
 
 export default function App() {
   const [ejercicioSeleccionado, setEjercicioSeleccionado] = useState(null);
@@ -45,6 +48,13 @@ export default function App() {
       titulo: "Desglose de Minutos a: Días, Horas y Minutos",
       categoria: "Algoritmos Básicos",
       componente: <Ejercicio05UI />
+    },
+    {
+      id: 6,
+      numero: "06",
+      titulo: "Suma de los N Primeros Números Naturales",
+      categoria: "Estructuras Repetitivas",
+      componente: <Ejercicio06UI />
     },
   ];
 
