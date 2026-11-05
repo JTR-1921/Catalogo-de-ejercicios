@@ -7,7 +7,7 @@ import { Ejercicio04UI } from "./componentes/Ejercicio04UI";
 import { Ejercicio05UI } from "./componentes/Ejercicio05UI";
 import { Ejercicio06UI } from "./componentes/Ejercicio06UI";
 import { Ejercicio07UI } from "./componentes/Ejercicio07UI";
-
+import { Ejercicio08UI } from "./componentes/Ejercicio08UI";
 
 export default function App() {
   const [ejercicioSeleccionado, setEjercicioSeleccionado] = useState(null);
@@ -63,6 +63,13 @@ export default function App() {
       categoria: "Algoritmos Básicos",
       componente: <Ejercicio07UI />
     },
+    {
+      id: 8,
+      numero: "08",
+      titulo: "Cálculo de Salario Simple",
+      categoria: "Algoritmos Básicos",
+      componente: <Ejercicio08UI />
+    }
   ];
 
   const ejercicioActivo = listaEjercicios.find((e) => e.id === ejercicioSeleccionado);
