@@ -4,7 +4,7 @@ import { Ejercicio01UI } from "./componentes/Ejercicio01UI";
 import { Ejercicio02UI } from "./componentes/Ejercicio02UI";
 import { Ejercicio03UI } from "./componentes/Ejercicio03UI";
 import { Ejercicio04UI } from "./componentes/Ejercicio04UI";
-
+import { Ejercicio05UI } from "./componentes/Ejercicio05UI";
 
 export default function App() {
   const [ejercicioSeleccionado, setEjercicioSeleccionado] = useState(null);
@@ -38,7 +38,14 @@ export default function App() {
       titulo: "Conversión de Segundos Restantes a Minutos",
       categoria: "Algoritmos Básicos",
       componente: <Ejercicio04UI />
-    }
+    }, 
+    {
+      id: 5,
+      numero: "05",
+      titulo: "Desglose de Minutos a: Días, Horas y Minutos",
+      categoria: "Algoritmos Básicos",
+      componente: <Ejercicio05UI />
+    },
   ];
 
   const ejercicioActivo = listaEjercicios.find((e) => e.id === ejercicioSeleccionado);
