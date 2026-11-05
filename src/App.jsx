@@ -6,7 +6,7 @@ import { Ejercicio03UI } from "./componentes/Ejercicio03UI";
 import { Ejercicio04UI } from "./componentes/Ejercicio04UI";
 import { Ejercicio05UI } from "./componentes/Ejercicio05UI";
 import { Ejercicio06UI } from "./componentes/Ejercicio06UI";
-
+import { Ejercicio07UI } from "./componentes/Ejercicio07UI";
 
 
 export default function App() {
@@ -55,6 +55,13 @@ export default function App() {
       titulo: "Suma de los N Primeros Números Naturales",
       categoria: "Estructuras Repetitivas",
       componente: <Ejercicio06UI />
+    },
+    {
+      id: 7,
+      numero: "07",
+      titulo: "Cálculo de Suma de Salarios",
+      categoria: "Algoritmos Básicos",
+      componente: <Ejercicio07UI />
     },
   ];
 
