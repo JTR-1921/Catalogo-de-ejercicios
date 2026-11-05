@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { Ejercicio01UI } from "./componentes/Ejercicio01UI";
 import { Ejercicio02UI } from "./componentes/Ejercicio02UI";
+import { Ejercicio03UI } from "./componentes/Ejercicio03UI";
+
 
 export default function App() {
   const [ejercicioSeleccionado, setEjercicioSeleccionado] = useState(null);
@@ -22,7 +24,13 @@ export default function App() {
       categoria: "Algoritmos Básicos",
       componente: <Ejercicio02UI />
     },
-    // Aquí iremos sumando del 03 al 30
+    {
+      id: 3,
+      numero: "03",
+      titulo: "Cálculo de Descuento por Monto",
+      categoria: "Algoritmos Básicos",
+      componente: <Ejercicio03UI />
+    }
   ];
 
   const ejercicioActivo = listaEjercicios.find((e) => e.id === ejercicioSeleccionado);
