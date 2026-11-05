@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Ejercicio01UI } from "./componentes/Ejercicio01UI";
 import { Ejercicio02UI } from "./componentes/Ejercicio02UI";
 import { Ejercicio03UI } from "./componentes/Ejercicio03UI";
+import { Ejercicio04UI } from "./componentes/Ejercicio04UI";
 
 
 export default function App() {
@@ -30,6 +31,13 @@ export default function App() {
       titulo: "Cálculo de Descuento por Monto",
       categoria: "Algoritmos Básicos",
       componente: <Ejercicio03UI />
+    },
+    {
+      id: 4,
+      numero: "04",
+      titulo: "Conversión de Segundos Restantes a Minutos",
+      categoria: "Algoritmos Básicos",
+      componente: <Ejercicio04UI />
     }
   ];
 
