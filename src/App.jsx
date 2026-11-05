@@ -10,6 +10,7 @@ import { Ejercicio07UI } from "./componentes/Ejercicio07UI";
 import { Ejercicio08UI } from "./componentes/Ejercicio08UI";
 import { Ejercicio09UI } from "./componentes/Ejercicio09UI";
 import { Ejercicio10UI } from "./componentes/Ejercicio10UI";
+import { Ejercicio11UI } from "./componentes/Ejercicio11UI";
 
 export default function App() {
   const listaEjercicios = [
@@ -22,8 +23,10 @@ export default function App() {
     { id: 7, numero: "07", titulo: "Suma de Salarios", categoria: "Estructuras Repetitivas", descripcion: "Calcula el salario individual de N trabajadores y la suma acumulada total.", componente: <Ejercicio07UI /> },
     { id: 8, numero: "08", titulo: "Salario Simple", categoria: "Algoritmos Básicos", descripcion: "Cálculo directo de salario multiplicando horas por tarifa.", componente: <Ejercicio08UI /> },
     { id: 9, numero: "09", titulo: "Estadísticas de Notas", categoria: "Estructuras Repetitivas", descripcion: "Clasifica N notas en aprobadas y desaprobadas con promedios específicos.", componente: <Ejercicio09UI /> },
-    { id: 10, numero: "10", titulo: "Suma de Dígitos", categoria: "Algoritmos Matemáticos", descripcion: "Suma los dígitos individuales de cualquier número entero ingresado.", componente: <Ejercicio10UI /> }
+    { id: 10, numero: "10", titulo: "Suma de Dígitos", categoria: "Algoritmos Matemáticos", descripcion: "Suma los dígitos individuales de cualquier número entero ingresado.", componente: <Ejercicio10UI /> },
+    { id: 11, numero: "11", titulo: "Cálculo de Factura", categoria: "Estructuras Condicionales", descripcion: "Calcula el total de una factura considerando descuentos y cargos.", componente: <Ejercicio11UI /> }
   ];
+
 
   const TARJETAS_POR_PAGINA = 6;
   const [paginaActual, setPaginaActual] = useState(0);
