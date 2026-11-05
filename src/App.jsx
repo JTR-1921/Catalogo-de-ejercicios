@@ -9,7 +9,7 @@ import { Ejercicio06UI } from "./componentes/Ejercicio06UI";
 import { Ejercicio07UI } from "./componentes/Ejercicio07UI";
 import { Ejercicio08UI } from "./componentes/Ejercicio08UI";
 import { Ejercicio09UI } from "./componentes/Ejercicio09UI";
-
+import { Ejercicio10UI } from "./componentes/Ejercicio10UI";
 
 
 export default function App() {
@@ -80,6 +80,13 @@ export default function App() {
       categoria: "Algoritmos Básicos",
       componente: <Ejercicio09UI />
     }, 
+    {
+      id: 10,
+      numero: "10",
+      titulo: "Suma de los Dígitos de un Número",
+      categoria: "Algoritmos Matemáticos",
+      componente: <Ejercicio10UI />
+    },
   ];
 
   const ejercicioActivo = listaEjercicios.find((e) => e.id === ejercicioSeleccionado);
