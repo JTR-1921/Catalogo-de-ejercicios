@@ -34,39 +34,53 @@ export default function App() {
   const ejerciciosVisibles = listaEjercicios.slice(inicio, inicio + TARJETAS_POR_PAGINA);
 
   return (
-    <div style={{ maxWidth: "1300px", margin: "0 auto", padding: "20px", fontFamily: "system-ui, sans-serif" }}>
-      <header style={{ textAlign: "center", marginBottom: "30px" }}>
-        <h1 style={{ color: "#646cff", marginBottom: "6px" }}>Catálogo Modular C# a React</h1>
-        <p style={{ color: "#aaa", margin: 0 }}>
+    <div
+      style={{
+        height: "100vh",
+        maxHeight: "100vh",
+        boxSizing: "border-box",
+        padding: "16px 24px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        fontFamily: "system-ui, sans-serif",
+        overflow: "hidden"
+      }}
+    >
+      {/* Header Compacto */}
+      <header style={{ textAlign: "center", flexShrink: 0, marginBottom: "12px" }}>
+        <h1 style={{ color: "#646cff", margin: "0 0 4px 0", fontSize: "1.75rem" }}>Catálogo Modular C# a React</h1>
+        <p style={{ color: "#aaa", margin: "0 0 8px 0", fontSize: "0.85rem" }}>
           Página {paginaActual + 1} de {totalPaginas} | {listaEjercicios.length} ejercicios registrados
         </p>
 
-        {/* Controles del Carrusel */}
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "16px", marginTop: "16px" }}>
+        {/* Controles de Navegación Compactos */}
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "12px" }}>
           <button
             onClick={() => setPaginaActual((prev) => Math.max(0, prev - 1))}
             disabled={paginaActual === 0}
             style={{
-              padding: "8px 16px",
-              borderRadius: "6px",
+              padding: "6px 14px",
+              borderRadius: "4px",
               border: "1px solid #444",
               backgroundColor: paginaActual === 0 ? "#222" : "#646cff",
               color: paginaActual === 0 ? "#555" : "#fff",
               cursor: paginaActual === 0 ? "not-allowed" : "pointer",
-              fontWeight: "bold"
+              fontWeight: "bold",
+              fontSize: "0.85rem"
             }}
           >
             ◀ Anterior
           </button>
 
-          <div style={{ display: "flex", gap: "8px" }}>
+          <div style={{ display: "flex", gap: "6px" }}>
             {Array.from({ length: totalPaginas }).map((_, idx) => (
               <button
                 key={idx}
                 onClick={() => setPaginaActual(idx)}
                 style={{
-                  width: "12px",
-                  height: "12px",
+                  width: "10px",
+                  height: "10px",
                   borderRadius: "50%",
                   border: "none",
                   backgroundColor: paginaActual === idx ? "#646cff" : "#444",
@@ -80,13 +94,14 @@ export default function App() {
             onClick={() => setPaginaActual((prev) => Math.min(totalPaginas - 1, prev + 1))}
             disabled={paginaActual === totalPaginas - 1}
             style={{
-              padding: "8px 16px",
-              borderRadius: "6px",
+              padding: "6px 14px",
+              borderRadius: "4px",
               border: "1px solid #444",
               backgroundColor: paginaActual === totalPaginas - 1 ? "#222" : "#646cff",
               color: paginaActual === totalPaginas - 1 ? "#555" : "#fff",
               cursor: paginaActual === totalPaginas - 1 ? "not-allowed" : "pointer",
-              fontWeight: "bold"
+              fontWeight: "bold",
+              fontSize: "0.85rem"
             }}
           >
             Siguiente ▶
@@ -94,11 +109,11 @@ export default function App() {
         </div>
       </header>
 
-      {/* Si hay un ejercicio seleccionado, se muestra arriba en grande */}
-      {ejercicioSeleccionado && (
-        <section style={{ marginBottom: "40px", animation: "fadeIn 0.3s ease" }}>
+      {/* Contenedor Principal: Modal o Grid Integrado */}
+      {ejercicioSeleccionado ? (
+        <section style={{ flex: 1, overflowY: "auto", backgroundColor: "#141414", padding: "16px", borderRadius: "8px", border: "1px solid #333" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "12px" }}>
-            <span style={{ color: "#aaa", fontSize: "0.9rem" }}>Ejercicio activo: #{ejercicioSeleccionado.numero}</span>
+            <span style={{ color: "#aaa", fontSize: "0.85rem" }}>Ejercicio activo: #{ejercicioSeleccionado.numero}</span>
             <button
               onClick={() => setEjercicioSeleccionado(null)}
               style={{
@@ -108,71 +123,71 @@ export default function App() {
                 border: "none",
                 borderRadius: "4px",
                 cursor: "pointer",
-                fontWeight: "bold"
+                fontWeight: "bold",
+                fontSize: "0.85rem"
               }}
             >
-              ✕ Cerrar Ejercicio
+              ✕ Cerrar y volver al catálogo
             </button>
           </div>
           {ejercicioSeleccionado.componente}
         </section>
-      )}
-
-      {/* Grid de 6 Tarjetas Compactas */}
-      <main
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))",
-          gap: "20px"
-        }}
-      >
-        {ejerciciosVisibles.map((ej) => {
-          const estaActivo = ejercicioSeleccionado?.id === ej.id;
-          return (
+      ) : (
+        /* Grid de 2 filas x 3 columnas que se ajusta exacto a la pantalla */
+        <main
+          style={{
+            flex: 1,
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gridTemplateRows: "repeat(2, 1fr)",
+            gap: "14px"
+          }}
+        >
+          {ejerciciosVisibles.map((ej) => (
             <div
               key={ej.id}
               style={{
-                backgroundColor: estaActivo ? "#2a2d42" : "#1e1e1e",
-                border: `1px solid ${estaActivo ? "#646cff" : "#333"}`,
+                backgroundColor: "#1e1e1e",
+                border: "1px solid #333",
                 borderRadius: "8px",
-                padding: "18px",
+                padding: "14px",
                 display: "flex",
                 flexDirection: "column",
-                justify: "space-between",
-                boxShadow: "0 4px 6px rgba(0,0,0,0.2)"
+                justifyContent: "space-between",
+                boxShadow: "0 2px 4px rgba(0,0,0,0.2)"
               }}
             >
               <div>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
-                  <span style={{ backgroundColor: "#646cff22", color: "#646cff", padding: "2px 8px", borderRadius: "4px", fontSize: "0.8rem", fontWeight: "bold" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "4px" }}>
+                  <span style={{ backgroundColor: "#646cff22", color: "#646cff", padding: "2px 6px", borderRadius: "4px", fontSize: "0.75rem", fontWeight: "bold" }}>
                     Ejercicio {ej.numero}
                   </span>
-                  <span style={{ fontSize: "0.75rem", color: "#888" }}>{ej.categoria}</span>
+                  <span style={{ fontSize: "0.7rem", color: "#888" }}>{ej.categoria}</span>
                 </div>
-                <h3 style={{ margin: "6px 0", color: "#fff", fontSize: "1.1rem" }}>{ej.titulo}</h3>
-                <p style={{ color: "#aaa", fontSize: "0.85rem", lineHeight: "1.4", minHeight: "38px" }}>{ej.descripcion}</p>
+                <h3 style={{ margin: "4px 0", color: "#fff", fontSize: "1rem" }}>{ej.titulo}</h3>
+                <p style={{ color: "#aaa", fontSize: "0.8rem", lineHeight: "1.3", margin: 0 }}>{ej.descripcion}</p>
               </div>
 
               <button
                 onClick={() => setEjercicioSeleccionado(ej)}
                 style={{
-                  marginTop: "14px",
-                  padding: "10px",
-                  backgroundColor: estaActivo ? "#4caf50" : "#2a2a2a",
+                  marginTop: "8px",
+                  padding: "8px",
+                  backgroundColor: "#2a2a2a",
                   color: "#fff",
-                  border: `1px solid ${estaActivo ? "#4caf50" : "#444"}`,
-                  borderRadius: "6px",
+                  border: "1px solid #444",
+                  borderRadius: "5px",
                   cursor: "pointer",
                   fontWeight: "bold",
-                  transition: "background 0.2s"
+                  fontSize: "0.85rem"
                 }}
               >
-                {estaActivo ? "✓ Viendo este ejercicio" : "Ejecutar Ejercicio ▶"}
+                Ejecutar Ejercicio ▶
               </button>
             </div>
-          );
-        })}
-      </main>
+          ))}
+        </main>
+      )}
     </div>
   );
 }
