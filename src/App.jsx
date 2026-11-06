@@ -12,7 +12,7 @@ import { Ejercicio09UI } from "./componentes/Ejercicio09UI";
 import { Ejercicio10UI } from "./componentes/Ejercicio10UI";
 import { Ejercicio11UI } from "./componentes/Ejercicio11UI";
 import { Ejercicio12UI } from "./componentes/Ejercicio12UI";
-
+import { Ejercicio13UI } from "./componentes/Ejercicio13UI";
 
 
 
@@ -30,8 +30,10 @@ export default function App() {
     { id: 9, numero: "09", titulo: "Estadísticas de Notas", categoria: "Estructuras Repetitivas", descripcion: "Clasifica N notas en aprobadas y desaprobadas con promedios específicos.", componente: <Ejercicio09UI /> },
     { id: 10, numero: "10", titulo: "Suma de Dígitos", categoria: "Algoritmos Matemáticos", descripcion: "Suma los dígitos individuales de cualquier número entero ingresado.", componente: <Ejercicio10UI /> },
     { id: 11, numero: "11", titulo: "Cálculo de Factura", categoria: "Estructuras Condicionales", descripcion: "Calcula el total de una factura considerando descuentos y cargos.", componente: <Ejercicio11UI /> },
-    { id: 12, numero: "12", titulo: "Clasificación de Números", categoria: "Estructuras Repetitivas", descripcion: "Clasifica una lista de números en positivos, negativos y ceros.", componente: <Ejercicio12UI /> }
-  ];
+    { id: 12, numero: "12", titulo: "Clasificación de Números", categoria: "Estructuras Repetitivas", descripcion: "Clasifica una lista de números en positivos, negativos y ceros.", componente: <Ejercicio12UI /> },
+    { id: 13, numero: "13", titulo: "Factorial de un Número", categoria: "Algoritmos Matemáticos", descripcion: "Calcula el factorial N! de un número entero no negativo utilizando un bucle iterativo.", componente: <Ejercicio13UI /> }
+  ]; 
+
 
 
   const TARJETAS_POR_PAGINA = 6;
