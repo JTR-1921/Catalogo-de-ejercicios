@@ -24,7 +24,7 @@ import { Ejercicio21UI } from "./componentes/Ejercicio21UI";
 import { Ejercicio22UI } from "./componentes/Ejercicio22UI";
 import { Ejercicio23UI } from "./componentes/Ejercicio23UI";
 import { Ejercicio24UI } from "./componentes/Ejercicio24UI";
-
+import { Ejercicio25UI } from "./componentes/Ejercicio25UI";
 
 
 
@@ -54,7 +54,8 @@ export default function App() {
     { id: 22, numero: "22", titulo: "Cubo y Raíz Cuadrada (Freno en 0)", categoria: "Estructuras Repetitivas", descripcion: "Calcula el cubo y la raíz cuadrada de números ingresados repetidamente hasta que el usuario ingresa el valor 0.", componente: <Ejercicio22UI /> },
     { id: 23, numero: "23", titulo: "Operaciones con Centinela", categoria: "Estructuras Repetitivas", descripcion: "Realiza operaciones básicas de suma, resta, multiplicación y división de dos números ingresados repetidamente hasta que el usuario ingresa el valor 0 como primer número.", componente: <Ejercicio23UI /> },
     { id: 24, numero: "24", titulo: "Área de un Triángulo", categoria: "Algoritmos Matemáticos", descripcion: "Calcula el área de un triángulo a partir de las longitudes de sus tres lados utilizando la fórmula de Herón.", componente: <Ejercicio24UI /> },
-    
+    { id: 25, numero: "25", titulo: "Teorema de Pitágoras (Hipotenusa)", categoria: "Algoritmos Matemáticos", descripcion: "Calcula la hipotenusa de un triángulo rectángulo ingresando los dos catetos.", componente: <Ejercicio25UI /> },
+
     
   ]; 
 
