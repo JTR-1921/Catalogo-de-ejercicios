@@ -28,6 +28,8 @@ import { Ejercicio25UI } from "./componentes/Ejercicio25UI";
 import { Ejercicio26UI } from "./componentes/Ejercicio26UI";
 import { Ejercicio27UI } from "./componentes/Ejercicio27UI";
 
+
+
 export default function App() {
   const listaEjercicios = [
     { id: 1, numero: "01", titulo: "Cálculo de Salario", categoria: "Algoritmos Básicos", descripcion: "Calcula el salario mensual a partir de horas trabajadas y tarifa horaria.", componente: <Ejercicio01UI /> },
@@ -56,8 +58,7 @@ export default function App() {
     { id: 24, numero: "24", titulo: "Área de un Triángulo", categoria: "Algoritmos Matemáticos", descripcion: "Calcula el área de un triángulo a partir de las longitudes de sus tres lados utilizando la fórmula de Herón.", componente: <Ejercicio24UI /> },
     { id: 25, numero: "25", titulo: "Teorema de Pitágoras (Hipotenusa)", categoria: "Algoritmos Matemáticos", descripcion: "Calcula la hipotenusa de un triángulo rectángulo ingresando los dos catetos.", componente: <Ejercicio25UI /> },
     { id: 26, numero: "26", titulo: "Geometría del Círculo y Esfera", categoria: "Algoritmos Matemáticos", descripcion: "Calcula la longitud de la circunferencia, el área del círculo y el volumen de la esfera dado un radio.", componente: <Ejercicio26UI /> },
-    { id: 27, numero: "27", titulo: "Cálculo de Interés Compuesto", categoria: "Algoritmos Matemáticos", descripcion: "Calcula el monto final de una inversión aplicando la fórmula del interés compuesto.", componente: <Ejercicio27UI /> },
-
+    { id: 27, numero: "27", titulo: "Consumos de Restaurante con Descuento", categoria: "Estructuras Repetitivas y Condicionales", descripcion: "Procesa consumos de un restaurante (hasta 130). Aplica un 15% de descuento a consumos mayores a $130 y calcula el total acumulado.", componente: <Ejercicio27UI /> }
 
 
     
