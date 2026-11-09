@@ -22,7 +22,7 @@ import { Ejercicio19UI } from "./componentes/Ejercicio19UI";
 import { Ejercicio20UI } from "./componentes/Ejercicio20UI";
 import { Ejercicio21UI } from "./componentes/Ejercicio21UI";
 import { Ejercicio22UI } from "./componentes/Ejercicio22UI";
-
+import { Ejercicio23UI } from "./componentes/Ejercicio23UI";
 
 
 export default function App() {
@@ -48,8 +48,8 @@ export default function App() {
     { id: 19, numero: "19", titulo: "Verificación de Parte Fraccionaria", categoria: "Algoritmos Matemáticos", descripcion: "Determina si un número real ingresado tiene o no parte fraccionaria (decimales).", componente: <Ejercicio19UI /> },
     { id: 20, numero: "20", titulo: "Ecuación Cuadrática Completa", categoria: "Algoritmos Matemáticos", descripcion: "Calcula las soluciones reales y complejas (imaginarias) de una ecuación de segundo grado aX² + bX + c = 0.", componente: <Ejercicio20UI /> },
     { id: 21, numero: "21", titulo: "Operaciones Básicas con Contador", categoria: "Estructuras Repetitivas", descripcion: "Realiza la suma, resta, multiplicación y división de dos números repetidamente hasta alcanzar 10 procesos.", componente: <Ejercicio21UI /> },
-    { id: 22, numero: "22", titulo: "Cubo y Raíz Cuadrada (Freno en 0)", categoria: "Estructuras Repetitivas", descripcion: "Calcula el cubo y la raíz cuadrada de números ingresados repetidamente hasta que el usuario ingresa el valor 0.", componente: <Ejercicio22UI /> }
-
+    { id: 22, numero: "22", titulo: "Cubo y Raíz Cuadrada (Freno en 0)", categoria: "Estructuras Repetitivas", descripcion: "Calcula el cubo y la raíz cuadrada de números ingresados repetidamente hasta que el usuario ingresa el valor 0.", componente: <Ejercicio22UI /> },
+    { id: 23, numero: "23", titulo: "Operaciones con Centinela", categoria: "Estructuras Repetitivas", descripcion: "Realiza operaciones básicas de suma, resta, multiplicación y división de dos números ingresados repetidamente hasta que el usuario ingresa el valor 0 como primer número.", componente: <Ejercicio23UI /> },
 
     
     
