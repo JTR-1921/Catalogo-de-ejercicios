@@ -16,7 +16,7 @@ import { Ejercicio13UI } from "./componentes/Ejercicio13UI";
 import { Ejercicio14UI } from "./componentes/Ejercicio14UI";
 import { Ejercicio15UI } from "./componentes/Ejercicio15UI";
 import { Ejercicio16UI } from "./componentes/Ejercicio16UI";
-
+import { Ejercicio17UI } from "./componentes/Ejercicio17UI";
 
 export default function App() {
   const listaEjercicios = [
@@ -36,6 +36,9 @@ export default function App() {
     { id: 14, numero: "14", titulo: "Múltiplos de un Número", categoria: "Estructuras Repetitivas", descripcion: "Encuentra todos los múltiplos de un número dentro de un rango específico.", componente: <Ejercicio14UI /> },
     { id: 15, numero: "15", titulo: "Suma y Producto de Pares en Rango", categoria: "Estructuras Repetitivas", descripcion: "Calcula la suma acumulada y el producto continuo de todos los números pares dentro de un rango determinado.", componente: <Ejercicio15UI /> },
     { id: 16, numero: "16", titulo: "Control de Acceso a la Fiesta", categoria: "Estructuras Condicionales", descripcion: "Valida el ingreso secuencial de 5 claves secretas. Si todas coinciden exactamente, permite el acceso a la fiesta.", componente: <Ejercicio16UI /> },
+    { id: 17, numero: "17", titulo: "Clasificación por Deportes", categoria: "Estructuras Repetitivas", descripcion: "Clasifica personas según el deporte que practican (Fútbol, Básquet, Vóley y Ajedrez) validando la entrada.", componente: <Ejercicio17UI /> },
+
+    
   ]; 
 
 
