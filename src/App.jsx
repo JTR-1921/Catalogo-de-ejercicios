@@ -19,6 +19,7 @@ import { Ejercicio16UI } from "./componentes/Ejercicio16UI";
 import { Ejercicio17UI } from "./componentes/Ejercicio17UI"
 import { Ejercicio18UI } from "./componentes/Ejercicio18UI";
 import { Ejercicio19UI } from "./componentes/Ejercicio19UI";
+import { Ejercicio20UI } from "./componentes/Ejercicio20UI";
 
 
 
@@ -45,6 +46,7 @@ export default function App() {
     { id: 17, numero: "17", titulo: "Clasificación por Deportes", categoria: "Estructuras Repetitivas", descripcion: "Clasifica personas según el deporte que practican (Fútbol, Básquet, Vóley y Ajedrez) validando la entrada.", componente: <Ejercicio17UI /> },
     { id: 18, numero: "18", titulo: "Primera Vocal Leída", categoria: "Estructuras Repetitivas", descripcion: "Lee caracteres uno a uno y se detiene al detectar la primera vocal (a, e, i, o, u).", componente: <Ejercicio18UI /> },
     { id: 19, numero: "19", titulo: "Verificación de Parte Fraccionaria", categoria: "Algoritmos Matemáticos", descripcion: "Determina si un número real ingresado tiene o no parte fraccionaria (decimales).", componente: <Ejercicio19UI /> },
+    { id: 20, numero: "20", titulo: "Ecuación Cuadrática Completa", categoria: "Algoritmos Matemáticos", descripcion: "Calcula las soluciones reales y complejas (imaginarias) de una ecuación de segundo grado aX² + bX + c = 0.", componente: <Ejercicio20UI /> },
     
 
 
