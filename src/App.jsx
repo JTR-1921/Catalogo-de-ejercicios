@@ -16,7 +16,7 @@ import { Ejercicio13UI } from "./componentes/Ejercicio13UI";
 import { Ejercicio14UI } from "./componentes/Ejercicio14UI";
 import { Ejercicio15UI } from "./componentes/Ejercicio15UI";
 import { Ejercicio16UI } from "./componentes/Ejercicio16UI";
-import { Ejercicio17UI } from "./componentes/Ejercicio17UI"
+import { Ejercicio17UI } from "./componentes/Ejercicio17UI";
 import { Ejercicio18UI } from "./componentes/Ejercicio18UI";
 import { Ejercicio19UI } from "./componentes/Ejercicio19UI";
 import { Ejercicio20UI } from "./componentes/Ejercicio20UI";
@@ -25,7 +25,7 @@ import { Ejercicio22UI } from "./componentes/Ejercicio22UI";
 import { Ejercicio23UI } from "./componentes/Ejercicio23UI";
 import { Ejercicio24UI } from "./componentes/Ejercicio24UI";
 import { Ejercicio25UI } from "./componentes/Ejercicio25UI";
-
+import { Ejercicio26UI } from "./componentes/Ejercicio26UI";
 
 
 export default function App() {
@@ -55,6 +55,9 @@ export default function App() {
     { id: 23, numero: "23", titulo: "Operaciones con Centinela", categoria: "Estructuras Repetitivas", descripcion: "Realiza operaciones básicas de suma, resta, multiplicación y división de dos números ingresados repetidamente hasta que el usuario ingresa el valor 0 como primer número.", componente: <Ejercicio23UI /> },
     { id: 24, numero: "24", titulo: "Área de un Triángulo", categoria: "Algoritmos Matemáticos", descripcion: "Calcula el área de un triángulo a partir de las longitudes de sus tres lados utilizando la fórmula de Herón.", componente: <Ejercicio24UI /> },
     { id: 25, numero: "25", titulo: "Teorema de Pitágoras (Hipotenusa)", categoria: "Algoritmos Matemáticos", descripcion: "Calcula la hipotenusa de un triángulo rectángulo ingresando los dos catetos.", componente: <Ejercicio25UI /> },
+    { id: 26, numero: "26", titulo: "Geometría del Círculo y Esfera", categoria: "Algoritmos Matemáticos", descripcion: "Calcula la longitud de la circunferencia, el área del círculo y el volumen de la esfera dado un radio.", componente: <Ejercicio26UI /> },
+
+
 
     
   ]; 
