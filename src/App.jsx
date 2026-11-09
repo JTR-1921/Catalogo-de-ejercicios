@@ -13,7 +13,8 @@ import { Ejercicio10UI } from "./componentes/Ejercicio10UI";
 import { Ejercicio11UI } from "./componentes/Ejercicio11UI";
 import { Ejercicio12UI } from "./componentes/Ejercicio12UI";
 import { Ejercicio13UI } from "./componentes/Ejercicio13UI";
-
+import { Ejercicio14UI } from "./componentes/Ejercicio14UI";
+import { Ejercicio15UI } from "./componentes/Ejercicio15UI";
 
 
 
@@ -31,7 +32,9 @@ export default function App() {
     { id: 10, numero: "10", titulo: "Suma de Dígitos", categoria: "Algoritmos Matemáticos", descripcion: "Suma los dígitos individuales de cualquier número entero ingresado.", componente: <Ejercicio10UI /> },
     { id: 11, numero: "11", titulo: "Cálculo de Factura", categoria: "Estructuras Condicionales", descripcion: "Calcula el total de una factura considerando descuentos y cargos.", componente: <Ejercicio11UI /> },
     { id: 12, numero: "12", titulo: "Clasificación de Números", categoria: "Estructuras Repetitivas", descripcion: "Clasifica una lista de números en positivos, negativos y ceros.", componente: <Ejercicio12UI /> },
-    { id: 13, numero: "13", titulo: "Factorial de un Número", categoria: "Algoritmos Matemáticos", descripcion: "Calcula el factorial N! de un número entero no negativo utilizando un bucle iterativo.", componente: <Ejercicio13UI /> }
+    { id: 13, numero: "13", titulo: "Factorial de un Número", categoria: "Algoritmos Matemáticos", descripcion: "Calcula el factorial N! de un número entero no negativo utilizando un bucle iterativo.", componente: <Ejercicio13UI /> },
+    { id: 14, numero: "14", titulo: "Múltiplos de un Número", categoria: "Estructuras Repetitivas", descripcion: "Encuentra todos los múltiplos de un número dentro de un rango específico.", componente: <Ejercicio14UI /> },
+    { id: 15, numero: "15", titulo: "Suma y Producto de Pares en Rango", categoria: "Estructuras Repetitivas", descripcion: "Calcula la suma acumulada y el producto continuo de todos los números pares dentro de un rango determinado.", componente: <Ejercicio15UI /> }
   ]; 
 
 
