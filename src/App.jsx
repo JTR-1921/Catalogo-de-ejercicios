@@ -18,7 +18,7 @@ import { Ejercicio15UI } from "./componentes/Ejercicio15UI";
 import { Ejercicio16UI } from "./componentes/Ejercicio16UI";
 import { Ejercicio17UI } from "./componentes/Ejercicio17UI"
 import { Ejercicio18UI } from "./componentes/Ejercicio18UI";
-
+import { Ejercicio19UI } from "./componentes/Ejercicio19UI";
 
 
 
@@ -44,7 +44,8 @@ export default function App() {
     { id: 16, numero: "16", titulo: "Control de Acceso a la Fiesta", categoria: "Estructuras Condicionales", descripcion: "Valida el ingreso secuencial de 5 claves secretas. Si todas coinciden exactamente, permite el acceso a la fiesta.", componente: <Ejercicio16UI /> },
     { id: 17, numero: "17", titulo: "Clasificación por Deportes", categoria: "Estructuras Repetitivas", descripcion: "Clasifica personas según el deporte que practican (Fútbol, Básquet, Vóley y Ajedrez) validando la entrada.", componente: <Ejercicio17UI /> },
     { id: 18, numero: "18", titulo: "Primera Vocal Leída", categoria: "Estructuras Repetitivas", descripcion: "Lee caracteres uno a uno y se detiene al detectar la primera vocal (a, e, i, o, u).", componente: <Ejercicio18UI /> },
-
+    { id: 19, numero: "19", titulo: "Verificación de Parte Fraccionaria", categoria: "Algoritmos Matemáticos", descripcion: "Determina si un número real ingresado tiene o no parte fraccionaria (decimales).", componente: <Ejercicio19UI /> },
+    
 
 
 
