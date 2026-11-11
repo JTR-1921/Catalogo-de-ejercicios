@@ -29,6 +29,7 @@ import { Ejercicio26UI } from "./componentes/Ejercicio26UI";
 import { Ejercicio27UI } from "./componentes/Ejercicio27UI";
 import { Ejercicio28UI } from "./componentes/Ejercicio28UI";
 import { Ejercicio29UI } from "./componentes/Ejercicio29UI";
+import { Ejercicio30UI } from "./componentes/Ejercicio30UI";
 
 export default function App() {
   const listaEjercicios = [
@@ -61,7 +62,7 @@ export default function App() {
     { id: 27, numero: "27", titulo: "Consumos de Restaurante con Descuento", categoria: "Estructuras Repetitivas y Condicionales", descripcion: "Procesa consumos de un restaurante (hasta 130). Aplica un 15% de descuento a consumos mayores a $130 y calcula el total acumulado.", componente: <Ejercicio27UI /> },
     { id: 28, numero: "28", titulo: "Suma de Serie (8 a N)", categoria: "Estructuras Repetitivas", descripcion: "Calcula la suma consecutiva de números enteros desde 8 hasta un número enésimo N ingresado por el usuario.", componente: <Ejercicio28UI /> },
     { id: 29, numero: "29", titulo: "Control de Egresos de Caja", categoria: "Estructuras Repetitivas", descripcion: "Registra egresos diarios partiendo de un fondo de caja inicial de $371.00. El proceso finaliza al ingresar -1 como egreso centinela.", componente: <Ejercicio29UI /> },
-    
+    { id: 30, numero: "30", titulo: "Promedio de Notas", categoria: "Algoritmos Matemáticos", descripcion: "Calcula el promedio de dos notas ingresadas por el usuario y determina si aprueba o desaprueba según el promedio obtenido.", componente: <Ejercicio30UI /> }
   ]; 
 
 
