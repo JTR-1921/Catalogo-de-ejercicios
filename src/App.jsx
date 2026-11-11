@@ -28,7 +28,7 @@ import { Ejercicio25UI } from "./componentes/Ejercicio25UI";
 import { Ejercicio26UI } from "./componentes/Ejercicio26UI";
 import { Ejercicio27UI } from "./componentes/Ejercicio27UI";
 import { Ejercicio28UI } from "./componentes/Ejercicio28UI";
-
+import { Ejercicio29UI } from "./componentes/Ejercicio29UI";
 
 export default function App() {
   const listaEjercicios = [
@@ -59,8 +59,8 @@ export default function App() {
     { id: 25, numero: "25", titulo: "Teorema de Pitágoras (Hipotenusa)", categoria: "Algoritmos Matemáticos", descripcion: "Calcula la hipotenusa de un triángulo rectángulo ingresando los dos catetos.", componente: <Ejercicio25UI /> },
     { id: 26, numero: "26", titulo: "Geometría del Círculo y Esfera", categoria: "Algoritmos Matemáticos", descripcion: "Calcula la longitud de la circunferencia, el área del círculo y el volumen de la esfera dado un radio.", componente: <Ejercicio26UI /> },
     { id: 27, numero: "27", titulo: "Consumos de Restaurante con Descuento", categoria: "Estructuras Repetitivas y Condicionales", descripcion: "Procesa consumos de un restaurante (hasta 130). Aplica un 15% de descuento a consumos mayores a $130 y calcula el total acumulado.", componente: <Ejercicio27UI /> },
-    { id: 28, numero: "28", titulo: "Suma de Serie (8 a N)", categoria: "Estructuras Repetitivas", descripcion: "Calcula la suma consecutiva de números enteros desde 8 hasta un número enésimo N ingresado por el usuario.", componente: <Ejercicio28UI /> }
-
+    { id: 28, numero: "28", titulo: "Suma de Serie (8 a N)", categoria: "Estructuras Repetitivas", descripcion: "Calcula la suma consecutiva de números enteros desde 8 hasta un número enésimo N ingresado por el usuario.", componente: <Ejercicio28UI /> },
+    { id: 29, numero: "29", titulo: "Control de Egresos de Caja", categoria: "Estructuras Repetitivas", descripcion: "Registra egresos diarios partiendo de un fondo de caja inicial de $371.00. El proceso finaliza al ingresar -1 como egreso centinela.", componente: <Ejercicio29UI /> },
     
   ]; 
 
